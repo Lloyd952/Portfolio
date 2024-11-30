@@ -9,14 +9,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
-#hero {
-    background: url("../images/background.webp") #dbdcde;
-    background-size: cover;
-    background-position: 50% 70%;
-    min-height: 500px;
-    padding: 5% 7%;
-}
-
 body {
     font-family: "poppins", sans-serif;
     background-color: #a4c2d1; /* egg blue */
@@ -38,6 +30,38 @@ h2 {
     background-color: #dbdcde; /*light grey*/
 }
 
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
 #contact {
     background-color: white;
+}
+
+#hero {
+    background: url("../images/background.webp") #dbdcde;
+    background-size: cover;
+    background-position: 50% 70%;
+    min-height: 500px;
+    padding: 5% 7%;
+}
+
+/* Media query */
+
+/* USE BS breakpoint */
+
+@media screen and (min-width: 1200px) {
+    /* fixes all portfolio cards beig too tall on xl screens*/
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
